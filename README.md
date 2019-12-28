@@ -1,7 +1,6 @@
-## Lesson-19
+## Lesson-23
 
-Now that we have our cart, it's time to create our checkout page. We need a checkout component for the page and our checkout-item component. We're going to connect the page to our cart reducer; we're also going to make a selector to get the total price.
-
+We have now created our collection page and converted our shop items data over from an array to an object to better leverage our url parameters! Converting arrays over to objects to store data is called data-normalization and it makes searching for specific elements in our code much easier and efficient!
 
 # How to fork and clone
 
