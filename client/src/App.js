@@ -17,7 +17,7 @@ import { checkUserSession } from './redux/user/user.actions';
 
 const App = ({ checkUserSession, currentUser }) => {
   useEffect(() => {
-    checkUserSession()
+    checkUserSession();
   }, [checkUserSession]);
 
   return (
@@ -31,18 +31,13 @@ const App = ({ checkUserSession, currentUser }) => {
           exact
           path='/signin'
           render={() =>
-            currentUser ? (
-              <Redirect to='/' />
-            ) : (
-              <SignInAndSignUpPage />
-            )
+            currentUser ? <Redirect to='/' /> : <SignInAndSignUpPage />
           }
         />
       </Switch>
     </div>
   );
-
-}
+};
 
 const mapStateToProps = createStructuredSelector({
   currentUser: selectCurrentUser
@@ -50,6 +45,9 @@ const mapStateToProps = createStructuredSelector({
 
 const mapDispatchToProps = dispatch => ({
   checkUserSession: () => dispatch(checkUserSession())
-})
+});
 
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(App);

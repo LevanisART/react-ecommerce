@@ -9,24 +9,24 @@ import { signUpStart } from '../../redux/user/user.actions';
 import { SignUpContainer, SignUpTitle } from './sign-up.styles';
 
 const SignUp = ({ signUpStart }) => {
-  const [userCredentials, setUserCredentials] = useState({ 
-    displayName: '', 
-    email: '', 
-    password: '', 
-    confirmPassword: '' 
+  const [userCredentials, setUserCredentials] = useState({
+    displayName: '',
+    email: '',
+    password: '',
+    confirmPassword: ''
   });
 
   const { displayName, email, password, confirmPassword } = userCredentials;
+
   const handleSubmit = async event => {
     event.preventDefault();
-
 
     if (password !== confirmPassword) {
       alert("passwords don't match");
       return;
     }
 
-    signUpStart({ displayName, email, password })
+    signUpStart({ displayName, email, password });
   };
 
   const handleChange = event => {
@@ -76,10 +76,13 @@ const SignUp = ({ signUpStart }) => {
       </form>
     </SignUpContainer>
   );
-}
+};
 
 const mapDispatchToProps = dispatch => ({
   signUpStart: userCredentials => dispatch(signUpStart(userCredentials))
-})
+});
 
-export default connect(null, mapDispatchToProps)(SignUp);
+export default connect(
+  null,
+  mapDispatchToProps
+)(SignUp);
