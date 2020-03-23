@@ -1,6 +1,3 @@
-# Lesson-31
-We have separated out our front-end client from our back-end express server that handles our stripe charges. In this section we learn how to write our express backend server as well as syncing our client to request our backend to complete a stripe charge!
-
 # How to fork and clone
 
 One quick note about cloning this project. If you wish to make commits and push the code up after cloning this repo, you should fork the project first. In order to own your own copy of this repository, you have to fork it so you get your own copy on your own profile!
