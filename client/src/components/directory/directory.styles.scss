@@ -4,32 +4,3 @@
   flex-wrap: wrap;
   justify-content: space-between;
 } 
-
-.hero-section {
-  background: #F7F8FB
-}
-
-.title-sm {
-  font-size: 23px;
-  letter-spacing: 1px;
-}
-
-.title-lg {
-  font: {
-    size: 60px;
-    weight: 700;
-  }
-  letter-spacing: 1px;
-  line-height: 74px;
-}
-
-.shop-button {
-  background: #000;
-  color: #FFF;
-  border-radius: 6px;
-  padding: 13px 39px;
-  &:hover {
-    color: #FFF;
-    text-decoration: none;
-  }
-}
