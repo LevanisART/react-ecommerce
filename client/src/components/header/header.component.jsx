@@ -15,7 +15,7 @@ import { signOutStart } from '../../redux/user/user.actions';
 import { ReactComponent as Logo } from '../../assets/logo.svg';
 
 const Header = ({ currentUser, hidden, signOutStart }) => (
-  <div className="container d-flex align-items-center justify-content-between position-relative py-4">
+  <div className="container d-flex align-items-center justify-content-between position-relative py-4 my-3">
     <div className="d-flex align-items-center">
       <Link to='/'>
         <Logo className="logo mt-n1" />

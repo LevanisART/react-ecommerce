@@ -2,13 +2,11 @@ import React from 'react';
 
 import Directory from '../../components/directory/directory.component';
 
-import { HomePageContainer } from './homepage.styles';
-
 const HomePage = () => {
   return (
-    <HomePageContainer className="container mt-5">
+    <div className="d-flex flex-direction-column align-items-center mt-5">
       <Directory />
-    </HomePageContainer>
+    </div>
   )
 };
 
