@@ -1,0 +1,24 @@
+.navbar-light {
+  margin-left: 93px;
+  .navbar-nav {
+    .nav-item {
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+    .nav-link {
+      color: #000;
+      font-size: 13px;
+      letter-spacing: .9px;
+    }
+  } 
+}
+
+.account-cart {
+  .nav-link {
+    font: {
+      size: 13px;
+      weight: 500;
+      letter-spacing: .9px;
+    }
+  }
+}
