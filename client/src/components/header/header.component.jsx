@@ -15,10 +15,10 @@ import { signOutStart } from '../../redux/user/user.actions';
 import { ReactComponent as Logo } from '../../assets/logo.svg';
 
 const Header = ({ currentUser, hidden, signOutStart }) => (
-  <div className="container d-flex align-items-center justify-content-between position-relative">
+  <div className="container d-flex align-items-center justify-content-between position-relative py-4">
     <div className="d-flex align-items-center">
       <Link to='/'>
-        <Logo className='logo' />
+        <Logo className="logo mt-n1" />
       </Link>
 
       <Navbar collapseOnSelect expand="lg" className="p-0">
@@ -52,14 +52,16 @@ const Header = ({ currentUser, hidden, signOutStart }) => (
       </Navbar>
     </div>
 
-    <div className="account-cart d-flex align-items-center">
-      {currentUser ? (
-        <div className="nav-link btn border-0" onClick={signOutStart}>
-          Sign Out
-        </div>
-      ) : (
-        <Link className="nav-link" to='/signin'>Sign In</Link>
-      )}
+    <div className="account-cart d-flex align-items-center mr-2">
+      <div className="account mr-2">
+        {currentUser ? (
+          <div className="nav-link btn border-0" onClick={signOutStart}>
+            Sign Out
+          </div>
+        ) : (
+          <Link className="nav-link" to='/signin'>Sign In</Link>
+        )}
+      </div>
       <CartIcon />
     </div>
       

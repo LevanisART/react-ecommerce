@@ -8,9 +8,11 @@ import { ReactComponent as ShoppingIconSVG } from '../../assets/shopping-bag.svg
 import './cart-icon.styles.scss';
 
 const CartIcon = ({ toggleCartHidden, itemCount }) => (
-  <div className="cart position-relative" onClick={toggleCartHidden}>
-    <ShoppingIconSVG className="shopping-icon" />
-    <div className="item-count">{itemCount}</div>
+  <div className="cart-container">
+    <div className="cart rounded-pill position-relative" onClick={toggleCartHidden}>
+      <ShoppingIconSVG className="shopping-icon mt-n1" />
+      <div className="item-count rounded-pill d-flex align-items-center justify-content-center">{itemCount}</div>
+    </div>
   </div>
 );
 

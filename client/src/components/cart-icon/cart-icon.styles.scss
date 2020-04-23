@@ -1,11 +1,17 @@
+.cart-container {
+  border-left: 1px solid #F4F4F4;
+  padding-left: 25px;
+}
+
 .cart {
-  width: 24px;
-  height: 45px;
+  width: 55px;
+  height: 55px;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  background: #000;
 }
 
 .shopping-icon {
@@ -15,7 +21,12 @@
 
 .item-count {
   position: absolute;
-  font-size: 10px;
+  top: -5px;
+  right: -10px;
+  font-size: 12px;
   font-weight: bold;
   bottom: 12px;
+  background: #FFF;
+  width: 24px;
+  height: 24px;
 }
