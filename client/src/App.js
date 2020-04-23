@@ -5,6 +5,7 @@ import { createStructuredSelector } from 'reselect';
 
 import Header from './components/header/header.component';
 import Spinner from './components/spinner/spinner.component';
+import Footer from './components/footer/footer.component';
 import ErrorBoundary from './components/error-boundary/error-boundary.component';
 
 import { selectCurrentUser } from './redux/user/user.selectors';
@@ -52,6 +53,7 @@ class App extends React.Component {
             </Suspense>
           </ErrorBoundary>
         </Switch>
+        <Footer />
       </div>
     );
   }

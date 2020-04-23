@@ -45,7 +45,7 @@ const Header = ({ currentUser, hidden, signOutStart }) => (
               <Link className="nav-link" to="/">About Us</Link>
             </div>
             <div className="nav-item">
-              <Link className="nav-link" to="/shop">Contact</Link>
+              <Link className="nav-link" to="/">Contact</Link>
             </div>
           </Nav>
         </Navbar.Collapse>

@@ -1,0 +1,21 @@
+.collection-preview-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 30px;
+  margin-bottom: 30px;
+}
+
+.title-container {
+  font-size: 28px;
+  margin-bottom: 25px;
+  cursor: pointer;
+
+  &:hover {
+    color: grey;
+  }
+}
+
+.preview-container {
+  display: flex;
+  justify-content: space-between;
+}

@@ -19,7 +19,7 @@ const Directory = ({ sections }) => (
       image1={ManImage1}
       image2={ManImage2}
       titleSm="MEN’S NEW ARRIVALS"
-      titleLg="THE LATEST AND GREATEST"
+      titleLg={"THE LATEST \n AND GREATEST"}
       shopLink="/shop/mens"
     />
 
@@ -35,7 +35,7 @@ const Directory = ({ sections }) => (
       image1={WomanImage1}
       image2={WomanImage2}
       titleSm="WOMEN’S NEW ARRIVALS"
-      titleLg="THE LATEST AND GREATEST"
+      titleLg={"THE LATEST \n AND GREATEST"}
       shopLink="/shop/womens"
     />
   </div>
