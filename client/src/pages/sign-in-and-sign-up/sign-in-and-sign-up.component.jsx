@@ -3,13 +3,13 @@ import React from 'react';
 import SignIn from '../../components/sign-in/sign-in.component';
 import SignUp from '../../components/sign-up/sign-up.component';
 
-import { SignInAndSignUpContainer } from './sign-in-and-sign-up.styles';
+import './sign-in-and-sign-up.styles.scss';
 
 const SignInAndSignUpPage = () => (
-  <SignInAndSignUpContainer>
+  <div className="container d-flex justify-content-between my-5">
     <SignIn />
     <SignUp />
-  </SignInAndSignUpContainer>
+  </div>
 );
 
 export default SignInAndSignUpPage;
