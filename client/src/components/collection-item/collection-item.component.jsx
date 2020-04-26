@@ -10,15 +10,16 @@ const CollectionItem = ({ item, addItem }) => {
   const { name, price, imageUrl } = item;
 
   return (
-    <div className="collection-item-container">
+    <div className="collection-item-container col-3 mb-5">
       <div style={{backgroundImage: `url(${imageUrl})`}} className='background-image image' />
-      <div className="collection-footer-container">
-        <span className="name-container">{name}</span>
-        <span className="price-container">${price}</span>
+      <div className="collection-footer-container d-flex align-items-center flex-column mt-3">
+        <span className="brand-container text-center mb-2">NIKE</span>
+        <span className="name-container text-center">{name}</span>
+        <span className="price-container text-center mt-1">${price}</span>
+        <CustomButton className="add-button" onClick={() => addItem(item)}>
+          Add to cart
+        </CustomButton>
       </div>
-      <CustomButton className="add-button" onClick={() => addItem(item)} inverted>
-        Add to cart
-      </CustomButton>
     </div>
   );
 };

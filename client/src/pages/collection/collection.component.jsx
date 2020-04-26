@@ -12,7 +12,7 @@ const CollectionPage = ({ collection }) => {
   return (
     <div className="collection-container container d-flex flex-column">
       <div className="collection-title">{title}</div>
-      <div className="collection-items-container">
+      <div className="collection-items-container d-flex flex-wrap row">
         {items.map(item => (
           <CollectionItem key={item.id} item={item} />
         ))}

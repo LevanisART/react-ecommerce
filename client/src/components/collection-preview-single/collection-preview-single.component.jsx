@@ -3,12 +3,12 @@ import { withRouter } from 'react-router-dom';
 
 import CollectionItem from '../collection-item/collection-item.component';
 
-import './collection-preview.styles.scss';
+import './collection-preview-single.styles.scss';
 
-const CollectionPreview = ({ title, items, history, match, routeName }) => {
+const CollectionPreviewSingle = ({ title, items, history, match, routeName }) => {
   return(
     <div className="collection-preview d-flex flex-column">
-      <div className="title-container" onClick={() => history.push(`${match.path}/${routeName}`)}>
+      <div className="title-container" onClick={() => history.push(`shop/${routeName}`)}>
         {title.toUpperCase()}
       </div>
       <div className="collection-preview-container d-flex flex-wrap row">
@@ -22,4 +22,4 @@ const CollectionPreview = ({ title, items, history, match, routeName }) => {
   )
 };
 
-export default withRouter(CollectionPreview);
+export default withRouter(CollectionPreviewSingle);

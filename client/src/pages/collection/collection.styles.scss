@@ -7,13 +7,3 @@
   font-size: 38px;
   margin: 0 auto 30px;
 }
-
-.collection-items-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 30px;
-
-  & > div {
-    margin-bottom: 30px;
-  }
-}

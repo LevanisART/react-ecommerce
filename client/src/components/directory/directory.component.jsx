@@ -2,9 +2,9 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 
-import CollectionPreview from '../collection-preview/collection-preview.component';
+import CollectionPreviewSingle from '../collection-preview-single/collection-preview-single.component';
 
-import { selectCollectionsForPreview } from '../../redux/directory/directory.selectors';
+import { selectCollectionsForPreview } from '../../redux/shop/shop.selectors';
 
 import ManImage1 from '../../assets/images/man1.png';
 import ManImage2 from '../../assets/images/man2.png';
@@ -15,7 +15,7 @@ import HeroSection from '../hero-section/hero-section.component';
 
 import './directory.styles.scss';
 
-import { fetchCollectionsStart } from '../../redux/directory/directory.actions';
+import { fetchCollectionsStart } from '../../redux/shop/shop.actions';
 
 
 class Directory extends React.Component {
@@ -40,10 +40,10 @@ class Directory extends React.Component {
           shopLink="/shop/mens"
         />
 
-        <div className="container py-5">
-          <div className="collection-overview container d-flex flex-column">
+        <div className="container pt-5">
+          <div className="collection-overview container d-flex flex-column mb-5">
             {mensCollection.map(({ id, ...otherCollectionProps }) => (
-              <CollectionPreview key={id} {...otherCollectionProps} />
+              <CollectionPreviewSingle key={id} {...otherCollectionProps} />
             ))}
           </div>
         </div>
@@ -59,7 +59,7 @@ class Directory extends React.Component {
         <div className="container py-5">
           <div className="collection-overview container d-flex flex-column">
             {womensCollection.map(({ id, ...otherCollectionProps }) => (
-              <CollectionPreview key={id} {...otherCollectionProps} />
+              <CollectionPreviewSingle key={id} {...otherCollectionProps} />
             ))}
           </div>
         </div>
