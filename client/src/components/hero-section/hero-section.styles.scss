@@ -143,13 +143,15 @@
     }
   }
   
-  .section-titles {
+  .section-info {
     align-items: flex-start !important;
+    margin-left: 1rem;
   }
 
   .img-left {
-    max-width: 55% !important;
-    flex: 0 0 55% !important;
+    max-width: unset;
+    flex: unset;
+    width: unset;
     margin-left: -2rem !important;
     justify-content: flex-start !important;
     img {
@@ -187,7 +189,7 @@
   .img-right {
     display: none;
   }
-  .section-titles {
+  .section-info {
     align-items: center !important;
   }
 

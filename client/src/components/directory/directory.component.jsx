@@ -40,7 +40,7 @@ class Directory extends React.Component {
           shopLink="/shop/mens"
         />
 
-        <div className="container py-5">
+        <div className="container pt-5 pb-4">
           <div className="collection-overview container d-flex flex-column my-5">
             {mensCollection.map(({ id, ...otherCollectionProps }) => (
               <CollectionPreviewSingle key={id} {...otherCollectionProps} />
