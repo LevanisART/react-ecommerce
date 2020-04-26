@@ -10,7 +10,7 @@ import'./collection.styles.scss';
 const CollectionPage = ({ collection }) => {
   const { title, items } = collection;
   return (
-    <div className="collection-container container d-flex flex-column">
+    <div className="collection-container container d-flex flex-column my-5">
       <div className="collection-title">{title}</div>
       <div className="collection-items-container d-flex flex-wrap row">
         {items.map(item => (

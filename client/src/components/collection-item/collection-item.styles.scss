@@ -4,7 +4,6 @@
   height: 430px;
   align-items: center;
   position: relative;
-  transition: 0.5s;
   &:hover {
     .image {
       opacity: 0.8;
@@ -12,6 +11,8 @@
   
     button {
       display: flex;
+      opacity: 1;
+      position: relative;
     }
   }
 }
@@ -28,9 +29,8 @@
 
 .add-button {
   min-width: unset;
-  // position: absolute;
-  // top: 255px;
   display: none;
+  opacity: 0;
   padding: 13px 20px;
 }
 

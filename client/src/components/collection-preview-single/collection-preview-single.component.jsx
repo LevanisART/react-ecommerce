@@ -13,7 +13,7 @@ const CollectionPreviewSingle = ({ title, items, history, match, routeName }) =>
       </div>
       <div className="collection-preview-container d-flex flex-wrap row">
         {items
-          .filter((item, idx) => idx < 6)
+          .filter((item, idx) => idx < 7)
           .map(item => (
             <CollectionItem key={item.id} item={item} />
           ))}
