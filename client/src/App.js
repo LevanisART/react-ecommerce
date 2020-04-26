@@ -23,6 +23,16 @@ class App extends React.Component {
   componentDidMount() {
     const { checkUserSession } = this.props;
     checkUserSession();
+
+    window.addEventListener('scroll', () => {
+      const isTop = window.scrollY > 0;
+      const nav = document.getElementById('header');
+      if (isTop) {
+        nav.classList.add('fixed');
+      } else {
+        nav.classList.remove('fixed');
+      }
+    })
   }
 
   componentWillUnmount() {

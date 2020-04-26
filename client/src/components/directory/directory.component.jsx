@@ -41,7 +41,7 @@ class Directory extends React.Component {
         />
 
         <div className="container pt-5">
-          <div className="collection-overview container d-flex flex-column mb-5">
+          <div className="collection-overview container d-flex flex-column my-5">
             {mensCollection.map(({ id, ...otherCollectionProps }) => (
               <CollectionPreviewSingle key={id} {...otherCollectionProps} />
             ))}
@@ -56,8 +56,8 @@ class Directory extends React.Component {
           shopLink="/shop/womens"
         />
 
-        <div className="container py-5">
-          <div className="collection-overview container d-flex flex-column">
+        <div className="container pt-5">
+          <div className="collection-overview container d-flex flex-column mt-5">
             {womensCollection.map(({ id, ...otherCollectionProps }) => (
               <CollectionPreviewSingle key={id} {...otherCollectionProps} />
             ))}

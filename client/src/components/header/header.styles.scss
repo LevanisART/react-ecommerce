@@ -1,3 +1,20 @@
+.header {
+  border-bottom: 1px solid #F4F4F4;
+}
+
+.fixed {
+  border-bottom: 1px solid #F4F4F4 !important;
+  position: fixed !important;
+  background: #FFF;
+  top: 0;
+  z-index: 11;
+  width: 100%;
+}
+
+.fixed+.content {
+  padding-top: 107px !important;
+}
+
 .navbar-light {
   margin-left: 93px;
   .navbar-nav {

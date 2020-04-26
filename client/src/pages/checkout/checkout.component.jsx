@@ -19,7 +19,7 @@ import {
 } from './checkout.styles';
 
 const CheckoutPage = ({ cartItems, total }) => (
-  <CheckoutPageContainer>
+  <CheckoutPageContainer className="content">
     <CheckoutHeaderContainer>
       <HeaderBlockContainer>
         <span>Product</span>
