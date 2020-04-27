@@ -18,7 +18,7 @@ import { ReactComponent as MobileLogo } from '../../assets/mobile-logo.svg';
 const Header = ({ currentUser, hidden, signOutStart }) => {
   return (    
     <header className="header" id="header">
-      <div className="container d-flex align-items-center justify-content-between position-relative py-4 px-4 px-sm-3 my-3">
+      <div className="container d-flex align-items-center justify-content-between position-relative py-4 px-4px-sm-3 my-3">
         <div className="logo-navbar w-100 justify-content-between justify-content-lg-start d-flex align-items-center">
           <Link className="logo" to='/'>
             <Logo className="d-none d-lg-block logo mt-n1" />
@@ -45,12 +45,12 @@ const Header = ({ currentUser, hidden, signOutStart }) => {
                 <div className="nav-item">
                   <Link className="nav-link" to="/shop">Collections</Link>
                 </div>
-                <div className="nav-item">
+                {/* <div className="nav-item">
                   <Link className="nav-link" to="/">About Us</Link>
                 </div>
                 <div className="nav-item">
                   <Link className="nav-link" to="/">Contact</Link>
-                </div>
+                </div> */}
               </Nav>
             </Navbar.Collapse>
           </Navbar>
