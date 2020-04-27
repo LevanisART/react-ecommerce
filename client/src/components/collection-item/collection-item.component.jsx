@@ -7,15 +7,15 @@ import CustomButton from '../custom-button/custom-button.component';
 import './collection-item.styles.scss';
 
 const CollectionItem = ({ item, addItem }) => {
-  const { name, price, imageUrl } = item;
+  const { name, price, imageUrl, company } = item;
 
   return (
     <div className="collection-item-container col-12 col-sm-6 col-md-4 col-lg-3 mb-5">
       <div className='item-image image'>
         <img src={imageUrl} alt=""/>
       </div>
-      <div className="collection-footer-container bg-white d-flex align-items-center flex-column mt-3">
-        <span className="brand-container text-center mb-2">NIKE</span>
+      <div className="collection-footer-container bg-white d-flex align-items-center flex-column pt-3">
+        <span className="brand-container text-center mb-2">{company}</span>
         <span className="name-container text-center">{name}</span>
         <span className="price-container text-center mt-1">${price}</span>
         <CustomButton className="custom-button add-button align-items-center mt-3" onClick={() => addItem(item)}>

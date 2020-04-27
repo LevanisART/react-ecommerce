@@ -4,6 +4,7 @@
   height: 430px;
   align-items: center;
   position: relative;
+  transition: all 0.3s;
   &:hover {
     .image {
       opacity: 0.8;
@@ -14,6 +15,9 @@
       opacity: 1;
       position: relative;
     }
+    .collection-footer-container {
+      bottom: 0;
+    }
   }
 }
 
@@ -21,23 +25,29 @@
   width: 100%;
   height: 332px;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
   img {
-    width: 100%;
+    min-width: 100%;
     object-fit: cover;
+    height: 100%;
   }
 }
 
 .add-button {
   min-width: unset;
-  display: none;
+  transition: all 0.3s;
+  // display: none;
   opacity: 0;
   padding: 13px 20px;
 }
 
-
 .collection-footer-container {
   width: 100%;
   font-size: 18px;
+  position: absolute;
+  bottom: -56px;
+  transition: all 0.3s;
 }
 
 .brand-container {
