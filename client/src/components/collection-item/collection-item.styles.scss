@@ -34,10 +34,11 @@
   }
 }
 
+
+
 .add-button {
   min-width: unset;
   transition: all 0.3s;
-  // display: none;
   opacity: 0;
   padding: 13px 20px;
 }
@@ -69,5 +70,40 @@
   font: {
     size: 16px;
     weight: 500;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .collection-item-container {
+    height: 530px;
+  }
+  
+  .item-image {
+    height: 410px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .add-button {
+    opacity: 1;
+  }
+  .collection-footer-container {
+    position: relative;
+    bottom: 0;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .collection-item-container {
+    height: unset;
+  }
+  
+  .item-image {
+    height: unset;
+    img {
+      min-width: unset;
+      width: 100%;
+      height: unset;
+    }
   }
 }

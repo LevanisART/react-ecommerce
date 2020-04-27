@@ -10,7 +10,7 @@ const CollectionItem = ({ item, addItem }) => {
   const { name, price, imageUrl, company } = item;
 
   return (
-    <div className="collection-item-container col-12 col-sm-6 col-md-4 col-lg-3 mb-5">
+    <div className="collection-item-container col-12 col-sm-6 col-lg-4 col-xl-3 mb-5">
       <div className='item-image image'>
         <img src={imageUrl} alt=""/>
       </div>

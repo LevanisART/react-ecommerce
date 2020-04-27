@@ -39,3 +39,121 @@
     }
   }
 }
+
+
+
+.navbar-toggler {
+  padding: 0;
+  border: none;
+  border-radius: 0;
+}
+
+.burger {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+.burger-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 33px;
+  height: 33px
+}
+
+.burger-inner {
+  width: 100%;
+  height: 100%
+}
+
+.burger-inner::before,.burger-inner::after {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  content: '';
+  width: 100%;
+  height: 1px;
+  transition: transform 250ms cubic-bezier(.2,.6,.3,1),width 250ms cubic-bezier(.2,.6,.3,1);
+  will-change: transform,width
+}
+
+.burger-inner::before {
+  transform: translatey(-5.5px)
+}
+
+.burger-inner::after {
+  transform: translatey(5.5px)
+}
+
+.burger--left .burger-inner::after {
+  transform: translatey(5.5px)
+}
+
+.burger:not(.collapsed) .burger-inner::before {
+  transform: translatex(3.3px) rotate(-135deg);
+  width: 26.4px
+}
+
+.burger:not(.collapsed) .burger-inner::after {
+  transform: translatex(3.3px) rotate(135deg);
+  width: 26.4px
+}
+
+
+.burger-inner::before, .burger-inner::after {
+  background-color: #000;
+}
+
+
+@media(max-width: 991.98px) {
+  .header {
+    .socials {
+      position: absolute;
+      bottom: 50px;
+      .social {
+        margin-left: 25px;
+        margin-right: 25px;
+        svg {
+          width: 30px;
+          height: 30px;
+        }
+      }
+    }
+  }
+  .navbar-collapse {
+    background-color: #FFF;
+    border: 1px solid #f2f2f2;
+    position: absolute;
+    left: 0;
+    top: 50px;
+    min-width: 170px;
+    z-index: 1;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 150ms;
+    padding: 7px 0;
+    &.show {
+      opacity: 1;
+    }
+    .nav-item {
+      margin: .25rem 1.5rem !important;
+      .nav-link {
+        font: { 
+          size: 15px;
+          weight: 400;
+        }
+      }
+    }
+  }
+}
