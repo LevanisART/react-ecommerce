@@ -13,6 +13,7 @@ import './header.styles.scss';
 import { signOutStart } from '../../redux/user/user.actions';
 
 import { ReactComponent as Logo } from '../../assets/logo.svg';
+import { ReactComponent as MobileLogo } from '../../assets/mobile-logo.svg';
 
 const Header = ({ currentUser, hidden, signOutStart }) => {
   return (    
@@ -20,7 +21,8 @@ const Header = ({ currentUser, hidden, signOutStart }) => {
       <div className="container d-flex align-items-center justify-content-between position-relative py-4 my-3">
         <div className="logo-navbar d-flex align-items-center">
           <Link to='/'>
-            <Logo className="logo mt-n1" />
+            <Logo className="d-none d-lg-block logo mt-n1" />
+            <MobileLogo className="d-lg-none"/>
           </Link>
 
           <Navbar collapseOnSelect expand="lg" className="p-0">
