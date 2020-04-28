@@ -1,32 +1,33 @@
 import React from 'react';
 
-import { ErrorImageOverlay, ErrorImageContainer, ErrorImageText } from './error-boundary.styles';
+import './error-boundary.styles.scss';
 
 class ErrorBoundary extends React.Component {
   constructor() {
     super();
-
+    
     this.state = {
       hasErrored: false
     };
   }
-
+  
   static getDerivedStateFromError(error) {
     // process the error
     return { hasErrored: true };
   }
-
+  
   componentDidCatch(error, info) {
     console.log(error);
   }
-
+  
   render() {
+    const { imageUrl } = this.props;
     if(this.state.hasErrored) {
       return (
-        <ErrorImageOverlay>
-          <ErrorImageContainer imageUrl='https://cdn.dribbble.com/users/1985885/screenshots/6202697/404-b.png' />
-          <ErrorImageText>Sorry, this page is broken</ErrorImageText>
-        </ErrorImageOverlay>
+        <div className="error-image-overlay">
+          <div className="error-image-container" style={`background-image: url(${imageUrl})`} />
+          <h2 className="error-image-text">Sorry, this page is broken</h2>
+        </div>
       )
     }
 

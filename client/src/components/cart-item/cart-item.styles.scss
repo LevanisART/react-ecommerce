@@ -1,20 +1,18 @@
-import styled from 'styled-components';
-
-export const CartItemContainer = styled.div`
+.cart-item-container {
   width: 100%;
   display: flex;
   margin-bottom: 15px;
-`;
+}
 
-export const CartItemImage = styled.img`
+.cart-item-image {
   width: 30%;
-`;
+}
 
-export const ItemDetailsContainer = styled.div`
+.item-details-container {
   width: 70%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
   padding: 10px 20px;
-`;
+}
