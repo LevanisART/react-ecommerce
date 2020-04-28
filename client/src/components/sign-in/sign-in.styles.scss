@@ -1,0 +1,10 @@
+.sign-in-container {
+  display: flex;
+  flex-direction: column;
+}
+
+@media(max-width: 575.98px) {
+  .sign-in-title {
+    font-size: 25px;
+  }
+}

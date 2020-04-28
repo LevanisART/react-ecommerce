@@ -6,9 +6,11 @@ import SignUp from '../../components/sign-up/sign-up.component';
 import './sign-in-and-sign-up.styles.scss';
 
 const SignInAndSignUpPage = () => (
-  <div className="container d-flex justify-content-between my-5">
-    <SignIn />
-    <SignUp />
+  <div className="container my-5">
+    <div className="row d-flex justify-content-between">
+      <SignIn />
+      <SignUp />
+    </div>
   </div>
 );
 
