@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import './hero-section.styles.scss';
 
 const HeroSection = (props) => (
-  <div className="hero-section mt-4">
+  <div className="hero-section mt-sm-4">
     <div className="container d-flex align-items-center justify-content-between">
       <div className="img-left col-3 mt-n5 ml-n5 d-flex justify-content-end">
         <img className="ml-n5 mt-n3" src={props.image1} alt=""/>

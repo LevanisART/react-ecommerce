@@ -17,7 +17,7 @@ class ShopPage extends React.Component {
   render() {
     const { match } = this.props;
     return (
-      <div className='content shop-page'>
+      <div className="shop-page py-4">
         <Suspense fallback={<Spinner />}>
           <Route 
             exact path={`${match.path}`} 

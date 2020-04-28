@@ -16,7 +16,7 @@ class HomePage extends React.Component {
   
   render() {
     return (
-      <div className="content d-flex flex-direction-column align-items-center mt-5">
+      <div className="d-flex flex-direction-column align-items-center mt-sm-5">
         <Directory />
       </div>
     )

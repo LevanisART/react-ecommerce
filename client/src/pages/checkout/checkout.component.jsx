@@ -13,7 +13,7 @@ import {
 import './checkout.styles.scss';
 
 const CheckoutPage = ({ cartItems, total }) => (
-  <div className="checkout-page content container pb-5 px-4 overflow-hidden">
+  <div className="checkout-page container py-5 px-4 overflow-hidden">
     <div className="checkout-page-container">
       <div className="checkout">
         <div className="checkout-header-container">
