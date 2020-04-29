@@ -25,7 +25,7 @@ class App extends React.Component {
     checkUserSession();
 
     window.addEventListener('scroll', () => {
-      const isTop = window.scrollY > 0;
+      const isTop = window.scrollY > 10;
       const nav = document.getElementById('header');
       if (isTop) {
         nav.classList.add('fixed');
