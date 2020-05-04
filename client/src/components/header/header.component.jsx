@@ -17,7 +17,7 @@ import { ReactComponent as MobileLogo } from '../../assets/mobile-logo.svg';
 
 const Header = ({ currentUser, hidden, signOutStart }) => {
   return (    
-    <header className="header fixed" id="header">
+    <header className="header" id="header">
       <div className="container d-flex align-items-center justify-content-between position-relative py-2 py-md-3 py-lg-4 px-4 px-sm-3 my-3">
         <div className="logo-navbar w-100 justify-content-between justify-content-lg-start d-flex align-items-center">
           <Link className="logo" to='/'>
